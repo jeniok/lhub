@@ -92,7 +92,7 @@ public class LearningHubVerticle extends AbstractVerticle {
   private void initRoutes(Router router, OAuth2AuthHandler oauth2) {
     // protect all resources beneath /lhub/* with oauth2 handler
 
-    //router.route("/lhub/*").handler(oauth2);
+    router.route("/lhub/*").handler(oauth2);
     router.get("/lhub").handler(this::handleIndex);
     router.post("/lhub/api/topics/rate/:tid").handler(this::rateTopic);
     router.get("/lhub/api/users/:uid").handler(this::fetchUserData);
