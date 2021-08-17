@@ -56,7 +56,7 @@ public class LearningHubVerticle extends AbstractVerticle {
     // Expose form parameters in request
     router.route().handler(BodyHandler.create());
 
-    // CSRF handler setup required for logout form
+    // CSRF handler setup
     router.route().handler(CSRFHandler.create(vertx, config().getString("csrfSecret")));
 
     String hostname = config().getString("http.host");
