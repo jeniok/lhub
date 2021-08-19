@@ -25,7 +25,7 @@
   "rememberMe" : false,
   "verifyEmail" : false,
   "loginWithEmailAllowed" : true,
-  "duplicateEmailsAllowed" : false,
+  "duplicateEmailsAllowed": false,
   "resetPasswordAllowed" : false,
   "editUsernameAllowed" : false,
   "bruteForceProtected" : false,
